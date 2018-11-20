@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+.side-block {
+    height: -webkit-fill-available!important;
+}
+
+img {
+    border-radius: 50%;
+    width: 152px;
+    height: 152px;
+}
+
+body {
+    color: white;
+    max-width: 1500px;
+}
+
+html, body {
+    height: 100%;
+}

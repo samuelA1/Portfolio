@@ -1,0 +1,33 @@
+.container { 
+    background-image: url("https://c.pxhere.com/photos/07/14/new_york_skyscrapers_high_rises_buildings_metropole_cityscape_urban_usa-947000.jpg!d");
+
+    height: 100%; 
+    margin: 0;
+    max-width: 100%;
+    padding-left: 0px;
+    position: absolute;
+    color: black;
+    overflow: hidden;
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro-section {
+    position: relative;
+    top: 250px;
+}
+
+.intro-one {
+    font-size: 60px;
+    font-weight: 1000
+}
+
+.intro-two {
+    font-size: 30px;
+}
+
+
+

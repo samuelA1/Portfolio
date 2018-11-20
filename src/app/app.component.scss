@@ -1,0 +1,26 @@
+.name {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.job {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+li {
+    margin-top: 10px;
+}
+ 
+nav {
+    position: relative;
+    float: left;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+}
+
+.active {
+    color: black
+}
