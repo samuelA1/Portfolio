@@ -23,6 +23,7 @@
     font-size: 30px;
     line-height: 1;
     margin-bottom: .3em;
+    margin-top: 65px;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -58,5 +59,58 @@ ul {
     margin: 5px;
     list-style: none;
     text-decoration: none;
+}
 
+strong {
+    font-weight: bold
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    .project-image {
+        display: none;
+    }
+
+    .date {
+        visibility: hidden;
+        border-right: 0px;
+    }
+
+    .project-title {
+        margin-top: 35px;
+    }
+
+    .project-info {
+        margin-right: 35px;
+    }
+
+    .container {
+        text-align: center;
+        padding-right: 5px;
+        display: block;
+        margin-top: 400px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1023px) {
+    .date {
+        visibility: hidden;
+        border-right: 0px;
+    }
+
+    .project-image {
+        display: none;
+    }
+
+    .date {
+        visibility: hidden;
+        border-right: 0px;
+    }
+
+    .project-title {
+        margin-top: 35px;
+    }
+
+    .date-first {
+        display: none;
+    }
 }

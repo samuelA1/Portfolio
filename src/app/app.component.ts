@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+  toggleshow = true;
+
+  constructor() {
+    this.toggleshow = false;
+  }
+
+  toggle() {
+    this.toggleshow =! this.toggleshow;
+  }
 }

@@ -1,30 +1,34 @@
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary col-md-3 sidebar fixed">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary col-md-3 sidebar" [ngStyle]="{'height':toggleshow ? '415px' : ''}">
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                    <div class="person-info">
+                            <img  class="mb-2" src="https://gravatar.com/avatar/376076682c4f3fcb42bf2c2274265b50?s200&d=retro"
+                                    alt="samuel essim">
+                            <p class="name"><strong>Samuel Essim</strong></p>
+                            <p class="job">Full-stack web developer</p>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarCollapse" [ngClass]="toggleshow ? 'show': 'false'">
+                        <ul class="nav flex-column">
+                            <li >
+                            <a [routerLink]="['/portfolio']" routerLinkActive="active" >Portfolio</a>
+                            </li>
+                            <li >
+                            <a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Skills & offer</a>
+                            </li>
+                            <li >
+                            <a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        <button (click)="toggle()" class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
-        <ul class="nav flex-column">
-            <div class="person-info mb-5">
-            <img  class="mb-2" src="https://gravatar.com/avatar/376076682c4f3fcb42bf2c2274265b50?s200&d=retro"
-                alt="samuel essim">
-                <p class="name"><strong>Samuel Essim</strong></p>
-                <p class="job">Full-stack web developer</p>
-            </div>
-            <li >
-            <a [routerLink]="['/portfolio']" routerLinkActive="active" >Portfolio</a>
-            </li>
-            <li >
-            <a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Skills & offer</a>
-            </li>
-            <li >
-            <a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Contact</a>
-            </li>
-            <li >
-            <a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Resume</a>
-            </li>
-        </ul>
-        </div>
+        
     </nav>
 </header>
   

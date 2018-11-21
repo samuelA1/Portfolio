@@ -9,6 +9,7 @@
     font-size: 18px;
 }
 
+
 li {
     margin-top: 10px;
 }
@@ -19,7 +20,7 @@ nav {
     left: 0px;
     top: 0px;
     z-index: 1000;
-    height: -webkit-fill-available!important;
+    height: -webkit-fill-available;
 }
 
 img {
@@ -34,6 +35,13 @@ img {
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
     nav {
+        // position: absolute;
+        display: block;
         float: none;
+        height: 310px;
+    }
+
+    .person-info {
+        margin-left: 45px;
     }
 }

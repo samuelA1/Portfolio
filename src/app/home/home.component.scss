@@ -29,5 +29,11 @@
     font-size: 30px;
 }
 
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    .container {
+        margin-top: 150px;
+    }
+}
+
 
 
