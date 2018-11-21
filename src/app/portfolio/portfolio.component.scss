@@ -1,0 +1,62 @@
+.main-title {
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.container {
+    color: black;
+    margin: 0;
+    max-width: 100%;
+    padding-left: 0px;
+    position: absolute;
+}
+
+.date {
+    border-right: 1px solid #555;
+    height: 500px;
+}
+
+.project-title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: .3em;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+li {
+    display: list-item
+}
+
+img {
+    width: 100%;
+    border-radius: none
+}
+
+ul {
+    list-style-type: square
+}
+
+.project-info {
+    position: absolute;    
+}
+
+.technologies {
+    list-style-type: none;
+}
+
+.technologies li {
+    display: inline-block;
+    background-color: #007bff;
+    color: #FFF;
+    padding: 4px 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 5px;
+    list-style: none;
+    text-decoration: none;
+
+}

@@ -8,22 +8,24 @@ ul {
 }
 
 
-
-.side-block {
-    height: -webkit-fill-available!important;
-}
-
-img {
-    border-radius: 50%;
-    width: 152px;
-    height: 152px;
-}
-
 body {
     color: white;
-    max-width: 1500px;
+    width: 100%;
+    max-width: 1400px;
+    font: 16px/1.6 Roboto,Helvetica,sans-serif;
+    font-weight: 300;
+    height: 100%;
 }
 
-html, body {
+html {
+    box-sizing: border-box;
     height: 100%;
+    
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    body {
+        max-width: 767px;
+    }
+
 }

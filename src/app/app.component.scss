@@ -14,13 +14,26 @@ li {
 }
  
 nav {
-    position: relative;
+    position: fixed;
     float: left;
     left: 0px;
     top: 0px;
     z-index: 1000;
+    height: -webkit-fill-available!important;
+}
+
+img {
+    border-radius: 50%;
+    width: 152px;
+    height: 152px;
 }
 
 .active {
     color: black
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    nav {
+        float: none;
+    }
 }
