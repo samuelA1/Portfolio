@@ -1,13 +1,15 @@
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary col-md-3 sidebar" [ngStyle]="{'height':toggleshow ? '415px' : ''}">
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary col-md-3 sidebar" [ngStyle]="{'height':toggleshow ? '415px' : ''}">
         <div class="container">
             <div class="row">
                 <div class="text-center">
                     <div class="person-info">
-                            <img  class="mb-2" src="https://gravatar.com/avatar/376076682c4f3fcb42bf2c2274265b50?s200&d=retro"
+                            <a [routerLink]="['']" routerLinkActive="active" >
+                                <img  class="mb-2" src="../assets/zfB5KqXn_400x400.jpg"
                                     alt="samuel essim">
-                            <p class="name"><strong>Samuel Essim</strong></p>
-                            <p class="job">Full-stack web developer</p>
+                                <p class="name"><strong>Samuel Essim</strong></p>
+                                <p class="job">Full-stack web developer</p>
+                            </a>
                     </div>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarCollapse" [ngClass]="toggleshow ? 'show': 'false'">
@@ -16,10 +18,10 @@
                             <a [routerLink]="['/portfolio']" routerLinkActive="active" >Portfolio</a>
                             </li>
                             <li >
-                            <a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Skills & offer</a>
+                            <a [routerLink]="['/skills']" routerLinkActive="active" >Skills & offer</a>
                             </li>
                             <li >
-                            <a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Contact</a>
+                            <a [routerLink]="['/contact']" routerLinkActive="active" >Contact</a>
                             </li>
                         </ul>
                     </div>

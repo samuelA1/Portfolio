@@ -1,0 +1,17 @@
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.container { 
+    position: absolute;
+    color: black;
+    margin: 10px;
+    width: 100%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    .container {
+        margin-top: 400px;
+    }
+}

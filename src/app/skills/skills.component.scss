@@ -1,0 +1,22 @@
+.container { 
+    position: absolute;
+    color: black;
+    margin: 10px;
+    width: 100%;
+}
+
+h2 {
+    color: #007bff;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+ul li {
+    list-style-type: circle
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    .container {
+        margin-top: 400px;
+    }
+}
